@@ -11,8 +11,8 @@ Entries that are currently crossed out we will either get to later in the course
    - 'list of files in local folder that have changes that need to be committed'
   - 'git status'
 - clone
-  - Copies a repository to the current system .
-  - `git clone https://github.com/WSU-kduncan/ceg3120-cybersmith-22/Projects/git-guide.md`
+  - Copies a repository to the current system.
+  - `git clone git@github.com:WSU-kduncan/ceg3120-cybersmith-22.git`
 - add
   - Adds the new or altered file to the staging area in preparation for the next commit.
   - `git add git-guide.md`
@@ -33,7 +33,7 @@ Entries that are currently crossed out we will either get to later in the course
   - `git merge projects`
 - pull
   - fetches content from the remote repository and merges it with local repository copy.
-  - `git pull https://github.com/WSU-kduncan/ceg3120-cybersmith-22/Projects/git-guide.md`
+  - `git pull git@github.com:WSU-kduncan/ceg3120-cybersmith-22.git`
 - branch
   - Lists, creates, or deletes branches
   - `git branch`
