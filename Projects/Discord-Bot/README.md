@@ -3,9 +3,9 @@
 ## Setup
 
 - How to get an API Token:
-  In Discord's Developer Portal under the Bot's page, select *Copy* under the *TOKEN* section.
+  - In Discord's Developer Portal under the Bot's page, select *Copy* under the *TOKEN* section.
 - Where to put the token to work with the code:
-  Inside the `Discord-Bot` project folder, create an `.env` file and add the line:
+  - Inside the `Discord-Bot` project folder, create an `.env` file and add the line:
   `DISCORD_TOKEN={your-bot-token}`, replacing `{your-bot-token}` with the copied token value.
 - Dependencies
   - `python3`, the python3 core
