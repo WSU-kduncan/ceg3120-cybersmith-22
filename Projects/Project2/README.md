@@ -3,62 +3,62 @@
 ## Part 1 - Build a VPC
 
 1. Create VPC   
-   ![SMITH-VPC created](absolute path)
+   ![SMITH-VPC created](https://github.com/WSU-kduncan/ceg3120-cybersmith-22/blob/main/Projects/Project2/images/vpc.JPG)
 
 2. Create Subnet   
-   ![SMITH-Subnet created](absolute path)
+   ![SMITH-Subnet created](https://github.com/WSU-kduncan/ceg3120-cybersmith-22/blob/main/Projects/Project2/images/subnet.JPG)
 
 3. Create Internet Gateway   
-   ![SMITH-gw created](absolute path)
+   ![SMITH-gw created](https://github.com/WSU-kduncan/ceg3120-cybersmith-22/blob/main/Projects/Project2/images/gw.JPG)
 
 4. Create Route Table   
-   ![SMITH-routetable created](absolute path)
+   ![SMITH-routetable created](https://github.com/WSU-kduncan/ceg3120-cybersmith-22/blob/main/Projects/Project2/images/rt.JPG)
 
 5. Create Security Group   
-   ![SMITH-sg created](absolute path)
+   ![SMITH-sg created](https://github.com/WSU-kduncan/ceg3120-cybersmith-22/blob/main/Projects/Project2/images/sg_full.JPG)
 
 
 ## Part 2 - EC2 Instances
-1. Instance Details   
-   ![instance details](absolute path)
+1. Instance Details  
    - AMI Selected: Ubuntu Server 18.04 LTS 
       - Default Username: ubuntu
    - Instance type: t2.micro 
+   ![instance details](https://github.com/WSU-kduncan/ceg3120-cybersmith-22/blob/main/Projects/Project2/images/instance.JPG)
 
 2. Attach Instance to VPC   
-   On step 3, under the network tab, select the instance's desired VPC. 
-      For my instance, I attached my VPC I created in Part 1, SMITH-VPC.
+   On step 3, under the network tab, select the instance's desired VPC.  
+      - For my instance, I attached my VPC I created in Part 1, SMITH-VPC.
 
 3. Public IP Auto-Assign   
    Opted not to auto-assign a public ip address because I felt the elastic ip was sufficent. I also didn't want to go back a fix things later on if the address changed.  
 
 4. Storage Volume   
    On step 4, there is an option to adjust the instance's storage. 
-      For my instance, I assigned it 16 GB. Up to 30 GB of SSD storage is available for free.  
+      - For my instance, I assigned it 16 GB. Up to 30 GB of SSD storage is available for free.  
 
 5. Tag Instance   
    On step 5, there is the option to add tags to the instance like the name. 
-      For my instance, I entered "Name" under the Key column, then added "SMITH-instance" in the Value column.  
+      - For my instance, I entered "Name" under the Key column, then added "SMITH-instance" in the Value column.  
 
 6. VPC Security Group   
    On step 6, to add the instance to an already created security group, choose "Select an ***existing*** security group", then select the instance's desired security group. 
-      For my instance, I selected the security group that I created in Part 1, SMITH-sg.  
+      - For my instance, I selected the security group that I created in Part 1, SMITH-sg.  
 
 7. Elastic IP   
-   - To create an Elastic IP for the instance:
-      1.  Under "Network & Security", select "Elastic IPs".  
-      2.  Click the orange "Allocate Elastic IP address" button in the top right.   
-      3. Keep the default settings and add a name tag.   
-         - For my instance, under Key I added, "Name" and under Value, "SMITH-EIP".   
-      4. Click the orange "Allocate" button in the bottom right. The allocated Elastic IP has been created! 
-   - To associate that Elastic IP to an instance: 
+   To create an Elastic IP for the instance:
+        1.  Under "Network & Security", select "Elastic IPs".  
+        2.  Click the orange "Allocate Elastic IP address" button in the top right.   
+        3. Keep the default settings and add a name tag.   
+           - For my instance, under Key I added, "Name" and under Value, "SMITH-EIP".   
+        4. Click the orange "Allocate" button in the bottom right. The allocated Elastic IP has been created! 
+   To associate that Elastic IP to an instance: 
       1. Under the "Actions" drop down, select "Associate Elastic IP address".  
       2. Under "Instance" select the instance that will be associated with the Elastic IP.   
       3. Under "Private IP address" select select the given address. This is the IP address that is already associated with the instance.  
       4. Click the orange "Associate" button in the bottom right. The allocated Elastic IP address is now associated with the instance!
 
 8. Hostname   
-   - To change the hostname for the instance through the command line:
+   To change the hostname for the instance through the command line:
       1. SSH into the instance
       2. It is a good idea to copy the original config files before changing hostname.   
          `cp /etc/hostname /etc/hostname.old`
@@ -72,4 +72,4 @@
          `sudo reboot` 
 
 9. Successful SSH   
-   ![successful SSH](absolute path)
+   ![successful SSH](https://github.com/WSU-kduncan/ceg3120-cybersmith-22/blob/main/Projects/Project2/images/ssh_hostname.JPG)
