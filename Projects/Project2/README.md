@@ -45,31 +45,31 @@
       - For my instance, I selected the security group that I created in Part 1, SMITH-sg.  
 
 7. Elastic IP   
-   To create an Elastic IP for the instance:
+   To create an Elastic IP for the instance:   
         1.  Under "Network & Security", select "Elastic IPs".  
         2.  Click the orange "Allocate Elastic IP address" button in the top right.   
         3. Keep the default settings and add a name tag.   
-           - For my instance, under Key I added, "Name" and under Value, "SMITH-EIP".   
+             - For my instance, under Key I added, "Name" and under Value, "SMITH-EIP".   
         4. Click the orange "Allocate" button in the bottom right. The allocated Elastic IP has been created! 
    To associate that Elastic IP to an instance: 
-      1. Under the "Actions" drop down, select "Associate Elastic IP address".  
-      2. Under "Instance" select the instance that will be associated with the Elastic IP.   
-      3. Under "Private IP address" select select the given address. This is the IP address that is already associated with the instance.  
-      4. Click the orange "Associate" button in the bottom right. The allocated Elastic IP address is now associated with the instance!
+        1. Under the "Actions" drop down, select "Associate Elastic IP address".  
+        2. Under "Instance" select the instance that will be associated with the Elastic IP.   
+        3. Under "Private IP address" select select the given address. This is the IP address that is already associated with the instance.  
+        4. Click the orange "Associate" button in the bottom right. The allocated Elastic IP address is now associated with the instance!
 
 8. Hostname   
    To change the hostname for the instance through the command line:
-      1. SSH into the instance
-      2. It is a good idea to copy the original config files before changing hostname.   
-         `cp /etc/hostname /etc/hostname.old`
-      3. Using `sudo`, edit the hostname file. Delete the old name and replace it with the new host name.   
-         `sudo vim /etc/hostname`   
-         - For my instance, I changed it to SMITH-Ubuntu.   
-      4. If necessary, edit the /etc/hosts file using `sudo`.   
-         `sudo vim /etc/hosts`   
-         - In my case, the old hostname was not mentioned, so I did not have to edit this file. 
-      5. Reboot the system and SSH back in. 
-         `sudo reboot` 
+        1. SSH into the instance
+        2. It is a good idea to copy the original config files before changing hostname.   
+           `cp /etc/hostname /etc/hostname.old`
+        3. Using `sudo`, edit the hostname file. Delete the old name and replace it with the new host name.   
+           `sudo vim /etc/hostname`   
+           - For my instance, I changed it to SMITH-Ubuntu.   
+        4. If necessary, edit the /etc/hosts file using `sudo`.   
+           `sudo vim /etc/hosts`   
+           - In my case, the old hostname was not mentioned, so I did not have to edit this file. 
+        5. Reboot the system and SSH back in. 
+           `sudo reboot` 
 
 9. Successful SSH   
    ![successful SSH](https://github.com/WSU-kduncan/ceg3120-cybersmith-22/blob/main/Projects/Project2/images/ssh_hostname.JPG)
