@@ -74,7 +74,7 @@ Opted not to auto-assign a public ip address because I felt the elastic ip was s
         - `sudo vim /etc/hosts`   
         - In my case, the old hostname was not mentioned, so I did not have to edit this file. 
     5. Reboot the system and SSH back in. 
-        `sudo reboot` 
+        - `sudo reboot` 
 
 9. Successful SSH   
 ![successful SSH](https://github.com/WSU-kduncan/ceg3120-cybersmith-22/blob/main/Projects/Project2/images/ssh_hostname.JPG)
