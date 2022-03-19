@@ -25,6 +25,6 @@
     - `sudo systemctl restart apache2` to restart the apache2 service
     - using `index.srv1.html` and `index.srv2.html` as my resources
 5. Screenshots for srv1 & srv2
-    - ![server 1](https://github.com/WSU-kduncan/ceg3120-cybersmith-22/blob/d456124bee60da900fcd1d4f0f49180695886fd7/Projects/Project4/images/srv1.JPG)
-    - ![server 2](https://github.com/WSU-kduncan/ceg3120-cybersmith-22/blob/d456124bee60da900fcd1d4f0f49180695886fd7/Projects/Project4/images/srv2.JPG)
-6. [Link to Proxy](3.228.164.229)
+    ![server 1](https://github.com/WSU-kduncan/ceg3120-cybersmith-22/blob/d456124bee60da900fcd1d4f0f49180695886fd7/Projects/Project4/images/srv1.JPG)
+    ![server 2](https://github.com/WSU-kduncan/ceg3120-cybersmith-22/blob/d456124bee60da900fcd1d4f0f49180695886fd7/Projects/Project4/images/srv2.JPG)
+6. [Link to Proxy](http://3.228.164.229)
